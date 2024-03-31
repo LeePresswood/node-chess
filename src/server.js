@@ -2,7 +2,7 @@ import { createServer } from "http";
 import { readFileSync } from "fs";
 
 const server = createServer((req, res) => {
-    const html = readFileSync("index.html");
+    const html = readFileSync("./src/index.html");
 
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/html");
